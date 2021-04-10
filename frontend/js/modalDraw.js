@@ -117,5 +117,9 @@ function myModal(theme) {
 console.log($(".wrap>ul>li>img"))
 
 function bigImg(picture) {
-    console.log(picture)
+    let urlPicture = picture.getAttribute('src');
+    urlPicture = urlPicture.substring(1);
+    //location = urlPicture;
+    let urlCurrent = window.location.origin
+    window.open(urlCurrent + urlPicture, "_blank")
 }
